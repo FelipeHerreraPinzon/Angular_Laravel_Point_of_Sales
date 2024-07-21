@@ -6,6 +6,7 @@ import { CreateComponent} from './categories/create/create.component';
 export const routes: Routes = [
   { path: 'categorias', component: IndexComponent },
   { path: 'crear', component: CreateComponent },
+  
  
 ];
 
