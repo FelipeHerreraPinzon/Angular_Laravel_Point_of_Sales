@@ -1,1 +1,26 @@
-<p>index works!</p>
+<div class="container">
+    <h1>Angular 17 CRUD Posts Laravel API</h1>
+    
+    <a href="#" routerLink="/post/create/" class="btn btn-success">Create New Post</a>
+      
+    <table class="table table-striped">
+        <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th width="250px">Action</th>
+              </tr>
+        </thead>
+        <tbody>
+              <tr *ngFor="let category of categories">
+                <td>{{ category.id }}</td>
+                <td>{{ category.name }}</td>
+                <td>
+                  <a href="#" [routerLink]="['/categorias/', category.id, 'view']" class="btn btn-info">View</a>
+                  <a href="#" [routerLink]="['/categorias/', category.id, 'edit']" class="btn btn-primary">Edit</a>
+                  <button type="button" (click)="deletePost(category.id)" class="btn btn-danger">Delete</button>
+                </td>
+              </tr>
+        </tbody>
+    </table>
+ </div>
