@@ -6,13 +6,21 @@ import { AppComponent } from './app.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { ProductosComponent } from './productos/productos.component';
 import { VentasComponent } from './ventas/ventas.component';
+import { CreateComponent } from './categories/create/create.component';
+import { EditComponent } from './categories/edit/edit.component';
+import { IndexComponent } from './categories/index/index.component';
+import { ViewComponent } from './categories/view/view.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InicioComponent,
     ProductosComponent,
-    VentasComponent
+    VentasComponent,
+    CreateComponent,
+    EditComponent,
+    IndexComponent,
+    ViewComponent
   ],
   imports: [
     BrowserModule,
